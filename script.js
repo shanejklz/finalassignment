@@ -6,7 +6,6 @@ for (const item of inputFields) {
 }
 
 // Transfer text function
-
 function transferInput(event) {
   const inputTarget = event.target;
   const targetId = inputTarget.id.replace("form", "display");
