@@ -11,19 +11,73 @@
     <header>
       <h1>Wedding Invitation Designer</h1>
     </header>
-    <main>
-      <nav>
-        <h2>Classical</h2>
-        <h2>Romantic</h2>
-        <h2>Modern</h2>
-      </nav>
-      <section id="formsection">
-        <form>
-            
-        </form>
+    <nav>
+      <h2 class="displayStyle" id="navHeading1">Classical</h2>
+      <h2 class="displayStyle" id="navHeading2">Romantic</h2>
+      <h2 class="displayStyle" id="navHeading3">Modernist</h2>
+    </nav>
+    <section id="formSection">
+      <form id="dataForm" action="index.html" method="POST">
+        <label for="formFirstName">1st Name:</label>
+        <input
+          type="text"
+          maxlength="23"
+          name="formFirstName"
+          id="formFirstName"
+          autocomplete="off"
+        />
+        <label for="formSecondName">2nd Name:</label>
+        <input
+          type="text"
+          maxlength="23"
+          name="formSecondName"
+          id="formSecondName"
+          autocomplete="off"
+        />
+        <label for="formLastName">Last Name/s:</label>
+        <input
+          type="text"
+          maxlength="23"
+          name="formLastName"
+          id="formLastName"
+          autocomplete="off"
+        />
+        <label for="formDate">Date:</label>
+        <input
+          type="text"
+          maxlength="10"
+          minlength="10"
+          pattern="[0-9]{2}\.[0-9]{2}\.(19|20)\d{2}$"
+          name="formDate"
+          id="formDate"
+          autocomplete="off"
+        />
+        <label for="formLocation">Wedding Location:</label>
+        <input
+          type="text"
+          maxlength="30"
+          name="formLocation"
+          id="formLocation"
+          autocomplete="off"
+        />
+      </form>
+    </section>
+    <div id="displaySectionBorderContainer">
+      <section class="displayStyle1" id="displaySection">
+        <div class="displayText displayInitials" id="displayInitials1"></div>
+        <div class="displayText displayInitials" id="displayInitialsSymbol"></div>
+        <div class="displayText displayInitials" id="displayInitials2"></div>
+        <div class="displayText" id="displayInviteSentence">
+          You are cordially invited to the wedding of
+        </div>
+        <div class="displayText displayNames" id="displayFirstName"></div>
+        <div class="displayText displayNames" id="displayAmpersand">&</div>
+        <div class="displayText displayNames" id="displaySecondName"></div>
+        <div class="displayText displayNames" id="displayLastName"></div>
+        <div class="displayText" id="displayDate"></div>
+        <div class="displayText" id="displayLocation"></div>
       </section>
-      <section id="displaysection"></section>
-    </main>
+    </div>
     <footer></footer>
     <script src="script.js"></script>
   </body>
