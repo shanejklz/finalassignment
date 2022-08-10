@@ -179,6 +179,11 @@ footer {
 
 /* Display style specifics */
 
+@font-face {
+    font-family: Garamond ;
+    src: url(./fonts/eb-garamond-v26-latin-regular.woff);
+}
+
 .displayStyle1 {
   outline: 1px solid black;
   outline-offset: -15px;
@@ -186,13 +191,18 @@ footer {
 
 .displayStyle1 div {
   background-color: white;
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: Garamond;
   font-size: x-large;
   font-weight: bold;
 }
 
 .displayStyle1 #displayLastName {
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+@font-face {
+    font-family: Chopin;
+    src: url(./fonts/ChopinScript.woff);
 }
 
 .displayStyle2 {
@@ -202,7 +212,7 @@ footer {
 }
 
 .displayStyle2 div {
-  font-family: cursive;
+  font-family: Chopin;
   font-size: xx-large;
   font-weight: bold;
 }
@@ -215,11 +225,11 @@ footer {
 
 .displayStyle2 #displayInviteSentence {
   font-size: x-large;
-  border-top: 1px solid black;
+  border-top: 2px solid black;
 }
 
 .displayStyle2 #displayFirstName {
-  border-top: 1px solid black;
+  border-top: 2px solid black;
 }
 
 .displayStyle2 #displayLastName {
