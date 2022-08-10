@@ -274,7 +274,7 @@ footer {
   }
 
   header {
-    grid-column: 1 / span 6;
+    grid-column: 1 / span 5;
     font-size: 2vmax;
     margin-bottom: 3%;
   }
